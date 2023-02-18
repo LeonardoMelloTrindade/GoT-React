@@ -25,18 +25,12 @@ export default function navTop() {
             />
         </Navbar.Brand>
         <Nav className="justify-content-end">
-          <Nav.Link href="#" data-tip='Casa Stark'>
-            <img
-              className='tamanho_emblema'
-              src='https://icons.iconarchive.com/icons/limav/game-of-thrones/128/Stark-icon.png' />
-          </Nav.Link>
-
           {casas.map(casa => {
             return (
               <Nav.Link key={casa.nome} href="#">
                 <img
                   className='tamanho_emblema'
-                  src={`https://icons.iconarchive.com/icons/limav/game-of-thrones/128/${casa.nome}-icon.png`} />
+                  src={`https://icons.iconarchive.com/icons/liav/game-of-thrones/128/${casa.nome}-icon.png`} />
               </Nav.Link>
             )
           })}
