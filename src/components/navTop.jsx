@@ -41,14 +41,12 @@ export default function navTop() {
                                 <div>
                                     {casas.map(casa => {
                                         return (
-
-                                            <Nav.Link href="#" className="d-md-none">
+                                            <Nav.Link key={casa._id} href="#" className="d-md-none">
                                                 <img
                                                     className='tamanho_emblema_hamburguer'
                                                     src={`https://icons.iconarchive.com/icons/limav/game-of-thrones/128/${casa.nome}-icon.png`} />
                                                 <span className="ms-2">{casa.nome}</span>
                                             </Nav.Link>
-
                                         )
                                     })}
                                 </div>
@@ -56,7 +54,7 @@ export default function navTop() {
                                     {casas.map(casa => {
                                         return (
                                             <OverlayTrigger
-                                                key={casa.nome}
+                                                key={casa._id}
                                                 placement="bottom"
                                                 delay={{ show: 250, hide: 400 }}
                                                 overlay={<Tooltip>{casa.nome}</Tooltip>}
