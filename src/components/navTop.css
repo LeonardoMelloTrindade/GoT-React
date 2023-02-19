@@ -1,4 +1,9 @@
 .tamanho_emblema {
-    height: 35px;
+    height: 40px;
     width: 50px;
+}
+
+.tamanho_emblema_hamburguer {
+    height: 20px;
+    width: 20px;
 }
