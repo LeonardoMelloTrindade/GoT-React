@@ -1,7 +1,41 @@
-body {
-    background-image: url('https://i.pinimg.com/originals/0e/33/57/0e3357c5984725c0726b324af49f2c1c.jpg');
+div {
+    font-family: 'got';
+    margin: 0;
+}
+
+.titulo_principal {
+    justify-content: center;
+    color: rgb(143, 240, 240);
+}
+
+.altura_max_bg {
+    border-bottom: 30px groove rgb(110, 110, 110);
+    height: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+}
+
+.alinhamento_flex {
+    display: flex;
+    font-family: 'got';
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+#principal {
+    justify-content: center;
+    background-image: url('https://i.pinimg.com/originals/0e/33/57/0e3357c5984725c0726b324af49f2c1c.jpg');
+}
+
+#frase_nedStark {
+    color: antiquewhite;
+    align-items: center;
+    justify-content: right;
+    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/03/ned-stark-got.jpeg');
+}
+
+#frase_tyrion {
+    background-image: url('https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2017/08/tyrion-lannister-1920-8a5b9538-e833-41d0-b420-21ef072e7b1a-1.jpg');
 }
