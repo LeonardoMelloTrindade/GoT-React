@@ -18,6 +18,7 @@ div {
 }
 
 .alinhamento_flex {
+    font-weight: bolder;
     display: flex;
     font-family: 'got';
     font-size: 2em;
@@ -37,5 +38,18 @@ div {
 }
 
 #frase_tyrion {
+    color: rgb(218, 147, 53);
+    align-items: end;
+    justify-content: right;
     background-image: url('https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2017/08/tyrion-lannister-1920-8a5b9538-e833-41d0-b420-21ef072e7b1a-1.jpg');
+}
+
+#frase_arya {
+    color: rgb(191, 150, 89);
+    align-items: end;
+    background-image: url('https://images5.alphacoders.com/710/710803.jpg');
+}
+
+#frase_daenerys {
+    background-image: url('https://wallpaperaccess.com/full/476729.jpg');
 }
