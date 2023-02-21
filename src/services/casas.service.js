@@ -1,11 +1,14 @@
 import axios from 'axios';
 
-export default class CasasServices {
+export default class Services {
 
 
-  async get() {
+  async getHouses() {
     return axios.get('http://localhost:3000/houses');
   }
+  async getCharacter() {
+    return axios.get('http://localhost:3000/characters');
+  }
+ 
 
-  
 }

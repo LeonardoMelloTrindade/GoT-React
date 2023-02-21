@@ -3,13 +3,16 @@ div {
     margin: 0;
 }
 
+footer {
+    text-shadow: none;
+}
+
 .titulo_principal {
     justify-content: center;
     color: rgb(143, 240, 240);
 }
 
 .altura_max_bg {
-    border-bottom: 30px groove rgb(110, 110, 110);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +26,7 @@ div {
     font-family: 'got';
     font-size: 2em;
     letter-spacing: 2px;
+    text-shadow: 1px -1px white, 1px 1px #333;
 }
 
 #principal {
@@ -51,5 +55,7 @@ div {
 }
 
 #frase_daenerys {
-    background-image: url('https://wallpaperaccess.com/full/476729.jpg');
+    color: rgb(118, 66, 66);
+    background-image: url('https://i.pinimg.com/originals/2d/66/61/2d66614c1b5dbf26d6abc84a2015277a.jpg');
 }
+
