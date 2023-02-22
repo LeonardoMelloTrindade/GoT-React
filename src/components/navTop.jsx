@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Nav, Navbar, Offcanvas, OverlayTrigger, Tooltip, Row, Col } from 'react-bootstrap';
-import CasasServices from '../services/casas.service';
+import { Container, Nav, Navbar, Offcanvas, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import Services from '../services/casas.service';
 import './navTop.css';
 
 
 export default function navTop() {
 
     const [casas, setCasas] = useState([])
-    const casasServices = new CasasServices()
+    const services = new Services()
 
     useEffect(() => {
-        casasServices.get().then((res) => setCasas(res.data))
+        services.getHouses().then((res) => setCasas(res.data))
     }, [])
 
     return (
@@ -19,11 +19,11 @@ export default function navTop() {
             <Navbar key='md' bg="dark" expand='md' className="mb-3 navbar-dark">
                 <Container fluid>
                     <Navbar.Brand href="#"> <img
-                        src="https://fontmeme.com/permalink/230219/71b03d40502f0315c6ebab603c9c5c98.png"
+                        src="https://fontmeme.com/permalink/230221/beca1345b03275b4de7a8f4f13cc024a.png"
                         alt="fonte-game-of-thrones"
                         border="0"
                         height={50}
-                        width={300}
+                        width={350}
                     /></Navbar.Brand>
                     <Navbar.Toggle aria-controls='offcanvasNavbar-expand-md' />
                     <Navbar.Offcanvas
