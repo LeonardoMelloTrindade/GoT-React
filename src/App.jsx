@@ -23,7 +23,7 @@ function App() {
 
       {characters.map(character => {
         return (
-          <div className='altura_max_bg alinhamento_flex' key={character._id}>
+          <div className='altura_max_bg alinhamento_flex align-items-center' key={character._id} style={{backgroundImage: `url(${character.url})`}}>
             <blockquote className="blockquote text-center">
               <p className="mb-4"><em>"{character.frase}"</em></p>
               <footer className="blockquote-footer">{character.nome}</footer>
