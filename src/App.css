@@ -3,10 +3,6 @@ div {
     margin: 0;
 }
 
-footer {
-    text-shadow: none;
-}
-
 .titulo_principal {
     justify-content: center;
     color: rgb(143, 240, 240);
@@ -34,28 +30,10 @@ footer {
     background-image: url('https://i.pinimg.com/originals/0e/33/57/0e3357c5984725c0726b324af49f2c1c.jpg');
 }
 
-#frase_nedStark {
-    color: antiquewhite;
-    align-items: center;
-    justify-content: right;
-    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/03/ned-stark-got.jpeg');
+footer {
+    color: #fff8f8;
 }
 
-#frase_tyrion {
-    color: rgb(218, 147, 53);
-    align-items: end;
-    justify-content: right;
-    background-image: url('https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2017/08/tyrion-lannister-1920-8a5b9538-e833-41d0-b420-21ef072e7b1a-1.jpg');
+.sentence {
+    width: 50%;
 }
-
-#frase_arya {
-    color: rgb(191, 150, 89);
-    align-items: end;
-    background-image: url('https://images5.alphacoders.com/710/710803.jpg');
-}
-
-#frase_daenerys {
-    color: rgb(118, 66, 66);
-    background-image: url('https://i.pinimg.com/originals/2d/66/61/2d66614c1b5dbf26d6abc84a2015277a.jpg');
-}
-

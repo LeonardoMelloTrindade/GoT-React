@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import NavTop from './components/navTop';
-import Services from './services/casas.service';
+import Characters from './data/characters';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
-  const [characters, setCharacters] = useState([])
-  const services = new Services()
-
-  useEffect(() => {
-    services.getCharacter().then((res) => setCharacters(res.data))
-  }, [])
 
   return (
     <>
@@ -21,12 +14,12 @@ function App() {
 
       </div>
 
-      {characters.map(character => {
+      {Characters.map((character, index ) => {
         return (
-          <div className='altura_max_bg alinhamento_flex align-items-center' key={character._id} style={{backgroundImage: `url(${character.url})`}}>
+          <div className='altura_max_bg alinhamento_flex align-items-center' key={index} style={{backgroundImage: `url(${character.image})`}}>
             <blockquote className="blockquote text-center">
-              <p className="mb-4"><em>"{character.frase}"</em></p>
-              <footer className="blockquote-footer">{character.nome}</footer>
+              <p className="mb-4 sentence"><em>"{character.sentence}"</em></p>
+              <footer className="blockquote-footer">{character.name}</footer>
             </blockquote>
           </div>
         )
